@@ -5,7 +5,7 @@
  */
 const $ = (id) => document.getElementById(id);
 const CONFIG = window.SGM_CONFIG || { mode: "demo", supabaseUrl: "", supabaseAnonKey: "" };
-const ADMIN_PASSWORD = "CHANGE_THIS_ADMIN_PASSWORD";
+const ADMIN_PASSWORD = "SGM2026";
 const SCANNER_PASSWORD = "ADMIN";
 const MAX_ENTRIES = 4;
 const PRICE = 200;
