@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#21070f">
+<title>Swarnkar Garba Mahotsav 2026 | Digital Pass</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">✦</span><span><b>SWARNKAR</b><small>GARBA MAHOTSAV 2026</small></span></a>
+  <nav><a href="#book">Book Pass</a><a href="#retrieve">Retrieve</a><a href="#support">Help & Support</a><button class="nav-admin" id="openAdmin">Admin / Scanner</button></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-art" aria-hidden="true"><div class="mandala">✺</div><div class="glow"></div></div>
+  <div class="hero-copy">
+    <div class="eyebrow">✦ JODHPUR • RAJASTHAN ✦</div>
+    <h1>SWARNKAR<br><em>GARBA MAHOTSAV</em></h1>
+    <p class="year">2K26 · DIGITAL ENTRY PASS</p>
+    <p class="hero-intro">Celebrate tradition. Dance with devotion. Make every moment unforgettable.</p>
+    <div class="hero-actions"><a class="btn gold" href="#book">Book Your Pass <span>↗</span></a><a class="btn outline" href="#retrieve">Retrieve Existing Pass</a></div>
+    <div class="hero-note"><span>✦</span> ₹200 per pass booking · Up to 4 members per QR code</div>
+  </div>
+  <div class="hero-side"><div class="side-label">A CELEBRATION OF CULTURE</div><div class="side-line"></div><div class="side-text">TRADITION<br>· RHYTHM ·<br>TOGETHERNESS</div></div>
+</section>
+<section class="feature-strip"><div><span>01</span><b>BOOK ONLINE</b><small>Submit details & payment</small></div><div><span>02</span><b>ADMIN VERIFICATION</b><small>Pass activates after approval</small></div><div><span>03</span><b>SCAN & ENTER</b><small>One QR · Maximum 4 people</small></div></section>
+<section class="content-grid" id="book">
+  <div class="section-heading"><p class="eyebrow">YOUR FESTIVAL JOURNEY</p><h2>Book a <em>Digital Pass</em></h2><p>Complete your booking below. Your pass stays inactive until the admin verifies your payment.</p></div>
+  <form id="bookingForm" class="panel form-panel">
+    <div class="panel-title"><span class="step">01</span><div><h3>Visitor Details</h3><p>Enter the details exactly as you want them on your pass.</p></div></div>
+    <label>FULL NAME<input name="name" id="name" placeholder="Enter your full name" required maxlength="100"></label>
+    <label>MOBILE NUMBER<input name="mobile" id="mobile" inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" placeholder="10-digit mobile number" required></label>
+    <div class="price-row"><div><small>PASS BOOKING AMOUNT</small><strong>₹200 <span>/ QR pass</span></strong><p>Each QR code permits up to 4 people, subject to approval.</p></div><span class="price-icon">₹</span></div>
+    <label>PAYMENT UTR / TRANSACTION ID<input name="utr" id="utr" placeholder="Enter UTR number after payment" required maxlength="80"></label>
+    <label>PAYMENT SCREENSHOT<input name="screenshot" id="screenshot" type="file" accept="image/*" required><small class="help">Upload a clear screenshot showing your successful payment. Image only, up to 5 MB.</small></label>
+    <label class="checkline"><input type="checkbox" required> I confirm the details and understand my QR pass activates only after admin payment verification.</label>
+    <button class="btn gold full" type="submit" id="submitBooking">Submit Booking <span>→</span></button>
+    <p class="form-message" id="bookingMessage" role="status"></p>
+    <p class="fineprint">Do not share your QR code publicly. Each approved QR can be used for a maximum of 4 entries.</p>
+  </form>
+  <aside class="side-column"><div class="panel steps-panel"><p class="eyebrow">HOW IT WORKS</p><h3>From booking to <em>entry</em></h3><ol><li><b>Book your pass</b><small>Submit name, phone, UTR and payment screenshot.</small></li><li><b>Wait for verification</b><small>Admin checks your payment and approves your pass.</small></li><li><b>Save your ticket</b><small>Download the ticket to your phone or retrieve it later using UTR.</small></li><li><b>Show at the gate</b><small>Gate staff scan the active QR and record the number entering.</small></li></ol></div>
+  <div class="panel warning-panel"><span>✦</span><div><b>Important</b><p>Submitting a booking does not mean entry is approved. Only an admin-approved QR code is valid at the gate.</p></div></div></aside>
+</section>
+<section class="retrieve-section" id="retrieve"><div class="retrieve-card"><div><p class="eyebrow">LOST YOUR TICKET?</p><h2>Retrieve your <em>pass</em></h2><p>Enter the UTR used during booking. For privacy, use the same UTR that was submitted with your payment.</p></div><form id="retrieveForm"><label>PAYMENT UTR / TRANSACTION ID<input id="retrieveUtr" required placeholder="Enter your UTR number"></label><button class="btn gold full" type="submit">Find My Pass →</button><p class="form-message" id="retrieveMessage" role="status"></p><div id="retrievedTicket"></div></form></div></section>
+<section class="gate-section" id="support"><div class="support-card"><div class="support-icon">✦</div><p class="eyebrow">WE'RE HERE TO HELP</p><h2>Help & <em>Support</em></h2><p>For booking issues, payment verification or pass retrieval, contact the event support team.</p><div class="support-details"><div><small>CONTACT PERSON</small><b>Deepak Soni</b></div><div><small>PHONE / WHATSAPP</small><b>8385963066</b></div><div><small>LOCATION</small><b>Moti Chowk, Jodhpur</b></div></div><a class="btn outline" href="https://wa.me/918385963066" target="_blank" rel="noopener">Contact on WhatsApp ↗</a></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">✦</span><span><b>SGM 2K26</b><small>SWARNKAR GARBA MAHOTSAV</small></span></a><span>Tradition in every step. Celebration in every beat.</span><span>Developed for SGM 2026</span></footer>
+<div class="modal hidden" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="adminTitle"><div class="modal-card"><button class="modal-close" id="closeAdmin" aria-label="Close">×</button><p class="eyebrow">RESTRICTED ACCESS</p><h2 id="adminTitle">Admin & <em>Gate Scanner</em></h2><div class="tabs"><button class="tab active" data-tab="admin">Admin Panel</button><button class="tab" data-tab="scanner">Gate Scanner</button></div>
+<form id="loginForm"><label>ACCESS PASSWORD<input type="password" id="panelPassword" required placeholder="Enter panel password"></label><button class="btn gold full">Unlock Panel →</button><p class="form-message" id="loginMessage"></p></form>
+<div id="adminPanel" class="hidden"><div class="admin-toolbar"><div><b>Booking Records</b><small>Verify payment before approving any pass.</small></div><button class="btn outline small" id="refreshRecords">Refresh</button></div><div class="stats" id="stats"></div><div class="table-wrap"><table><thead><tr><th>Visitor</th><th>UTR / Payment</th><th>Status</th><th>Entries</th><th>Actions</th></tr></thead><tbody id="recordsBody"></tbody></table></div><button class="btn outline full" id="logoutAdmin">Lock Admin Panel</button></div>
+<div id="scannerPanel" class="hidden"><div class="scanner-box"><h3>Scan Entry QR</h3><p>Use the device camera, or enter the pass ID manually.</p><div id="qrReader"></div><label>PASS ID<input id="manualPassId" placeholder="e.g. SGM26-ABC123"></label><button class="btn gold full" id="lookupPass">Validate Pass</button><p class="form-message" id="scanMessage"></p></div><div id="scanResult" class="scan-result hidden"></div><button class="btn outline full" id="logoutScanner">Lock Scanner</button></div>
+</div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body></html>
